@@ -14,7 +14,7 @@ function hitungGaji(): void {
     const UPAH_LEMBUR: number = 25000;
     const POTONGAN_ABSEN: number = 100000;
 
-    if (gajiPokok <= 0 || jamLembur <= 0 || hariAbsen <= 0) {
+    if (gajiPokok < 0 || jamLembur < 0 || hariAbsen < 0) {
         hasilGaji.innerHTML = "Error: Data tidak valid.";
         return;
     }
